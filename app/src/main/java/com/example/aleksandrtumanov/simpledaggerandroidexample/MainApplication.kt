@@ -2,8 +2,8 @@ package com.example.aleksandrtumanov.simpledaggerandroidexample
 
 import android.app.Activity
 import android.app.Application
-import com.example.aleksandrtumanov.simpledaggerandroidexample.di.DaggerMovieAppComponent
-import com.example.aleksandrtumanov.simpledaggerandroidexample.di.MovieAppComponent
+import com.example.aleksandrtumanov.simpledaggerandroidexample.di.component.DaggerMovieAppComponent
+import com.example.aleksandrtumanov.simpledaggerandroidexample.di.component.MovieAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
