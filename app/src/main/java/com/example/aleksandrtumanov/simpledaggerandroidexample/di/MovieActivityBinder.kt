@@ -10,11 +10,11 @@ import dagger.multibindings.ClassKey
 import dagger.multibindings.IntoMap
 
 @Module(subcomponents = arrayOf(MovieActivityComponent::class))
-internal abstract class MovieActivityBinder {
+abstract class MovieActivityBinder {
 
     @Binds
     @IntoMap
     @ClassKey(MainActivity::class)
-    internal abstract fun bindMainActivityInjectorFactory(builder: MovieActivityComponent.Builder):
-            AndroidInjector.Factory<out Activity>
+    abstract fun bindMainActivityInjectorFactory(builder: MovieActivityComponent.Builder):
+            AndroidInjector.Factory<*>
 }
